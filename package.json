@@ -1,0 +1,46 @@
+{
+  "name": "@mourasman/mocha-testrail-reporter-sync",
+  "version": "1.1.1",
+  "description": "A synchronous Testrail reporter for mocha including TestRail API basic library.",
+  "main": "index.js",
+  "private": false,
+  "keywords": [
+    "mocha",
+    "testrail",
+    "reporter"
+  ],
+  "author": {
+    "name": "Ricardo Moura",
+    "email": "mail@ricardomoura.eu"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mourasman/mocha-testrail-reporter-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mourasman/mocha-testrail-reporter-sync/issues"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "clean": "rimraf dist",
+    "test": "mocha dist/test",
+    "build": "npm run clean && npm run tsc"
+  },
+  "dependencies": {
+    "btoa": "^1.1.2",
+    "sync-request": "^6.0.0"
+  },
+  "peerDependencies": {
+    "mocha": "^3 || ^2.2.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.4.34",
+    "@types/mocha": "^2.2.36",
+    "@types/node": "^6.0.58",
+    "chai": "^3.5.0",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.1.4"
+  }
+}
