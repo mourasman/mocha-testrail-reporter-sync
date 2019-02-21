@@ -4,7 +4,7 @@ import {titleToCaseIds} from "./shared";
 import {Status, TestRailOptions, TestRailResult} from "./testrail.interface";
 
 
-export class MochaTestRailReporter extends reporters.Spec {
+export class MochaTestRailReporterSync extends reporters.Spec {
     private results: TestRailResult[] = [];
     private passes: number = 0;
     private fails: number = 0;
